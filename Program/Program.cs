@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+using ClassLibrary1;
+
+using ClassLibrary1
+Human Human = new Human();
