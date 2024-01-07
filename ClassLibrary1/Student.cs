@@ -25,7 +25,7 @@ namespace ClassLibrary1
 
         public override string ShowInfo()
         {
-            return $"{Name} {SurName} {BirthDate.ToShortDateString()} {Course} {Group} {Faculty} {HigherEducationInstitution}";
+            return $"Об'єкт класу Student\nІм'я:{Name},прізвище:{SurName},дата народження:{BirthDate.ToShortDateString()},курс:{Course},група:{Group},факультет:{Faculty},Вищий навчальний заклад:{HigherEducationInstitution}";
         }
     }
 }

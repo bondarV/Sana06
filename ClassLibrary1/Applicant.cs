@@ -9,6 +9,7 @@ namespace ClassLibrary1
 {
     public class Applicant : Human
     {
+        
         public float TotalZNOPoints { get; set; }
         public float NumberOfPointsForAnEducationDocument{ get; set; }
         public string NameOfInstitution { get; set; }
@@ -23,7 +24,8 @@ namespace ClassLibrary1
 
         public override string ShowInfo()
         {
-            return $"{Name} {SurName} {BirthDate.ToShortDateString()} {TotalZNOPoints} {NumberOfPointsForAnEducationDocument} {NameOfInstitution}";
+            //Було б доцільніше зробити вивід числа 190.5 без коми,але це не є метою цього завдання
+            return $"Об'єкт класу Applicant\nІм'я:{Name},прізвище:{SurName},дата народження:{BirthDate.ToShortDateString()},кількість балів сертифікатів ЗНО:{TotalZNOPoints},кількість балів за документ про освіту:{NumberOfPointsForAnEducationDocument},назва загальноосвітнього навчального закладу:{NameOfInstitution}";
         }
     }
 }

@@ -22,7 +22,7 @@ namespace ClassLibrary1
         }
         public override string ShowInfo()
         {
-            return $"{Name} {SurName} {BirthDate.ToShortDateString()} {NumberOfLibraryCard} {BirthDate.ToShortDateString()} {TheSizeOfTheMonthlyReaderContribution}";
+            return $"Об'єкт класу LibraryUser\nІм'я:{Name},прізвище:{SurName},дата народження:{BirthDate.ToShortDateString()},номер читацького квитка:{NumberOfLibraryCard},дата видачі:{BirthDate.ToShortDateString()},розмір щомісячного читацького внеску:{TheSizeOfTheMonthlyReaderContribution} грн.";
         }
     }
 

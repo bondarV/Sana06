@@ -6,7 +6,7 @@ namespace ClassLibrary1
     public class Human
     {
         public string Name { get; set; }
-        public string SurName { get; set; } 
+        public string SurName { get; set; }
 
         public DateTime BirthDate { get; set; }
 
@@ -16,10 +16,10 @@ namespace ClassLibrary1
             SurName = surName;
             BirthDate = birthDate;
         }
-        
+
         public virtual string ShowInfo()
         {
-            return $"{Name} {SurName} {BirthDate.ToShortDateString()}";
+            return $"Об'єкт класу Human\nІм'я:{Name},прізвище:{SurName},дата народження:{BirthDate.ToShortDateString()}";
         }
     }
 }
