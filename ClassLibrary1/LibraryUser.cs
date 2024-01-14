@@ -11,7 +11,20 @@ namespace ClassLibrary1
     {
         public int NumberOfLibraryCard { get; set; }
         public DateTime TimeOfIssue { get; set; }
-        public double TheSizeOfTheMonthlyReaderContribution { get; set; }
+
+       double _theSizeOfTheMonthlyReaderContribution;
+        public double TheSizeOfTheMonthlyReaderContribution
+        {
+            get {
+                return _theSizeOfTheMonthlyReaderContribution;
+            } set
+            {
+                if (value > 0)
+                    _theSizeOfTheMonthlyReaderContribution = value;
+                else throw new Exception("Плата не може бути від'ємною");
+            }
+
+        }
 
         public LibraryUser(string name, string surName, DateTime birthDate, int numberOfLibraryCard, DateTime timeOfIssue, double theSizeOfTheMonthlyReaderContribution)
             : base(name, surName, birthDate)
